@@ -1,0 +1,197 @@
+<!-- it is One of projects from freeCodeCamp Fronend developer course using bootstrape. -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Underdog-Html&Css과제</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--font-->
+    <script src="https://use.fontawesome.com/0ef2c8ec97.js"></script>
+</head>
+    
+<body>
+    <!-- Navigation -->  
+    <nav class = "navbar navbar-toggleable-sm navbar-inverse bg-inverse fixed-top">
+        <!--Toggle Collapse Navitem-->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#myContent" aria-controls="myContent" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>        
+        </button> <!--Collapse Btn on NavBar-->
+        
+        <!--Brand Name-->
+        <div class="container brandSY">
+            <a class ="navbar-brand" href="#">Bo-gyeong Choi</a>
+        </div>
+        
+        <!--Navigation items and links-->
+        <div class="container">  
+            <div class="collapse navbar-collapse mr-auto justify-content-end" id = "myContent">
+                <ul class="navbar-nav">
+                    <li><a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a class="nav-item nav-link" href="#about">About</a></li>
+                    <li><a class="nav-item nav-link" href="#skill">Skill</a></li>
+                    <li><a class="nav-item nav-link" href="#ambitions">Ambitions</a></li>
+                </ul><!--navbar-nav-->
+            </div><!--collapse-->     
+        </div><!--container-->
+    </nav>
+       
+    <!-- Welcome Page -->
+    <header class="cover">
+        <section id="home" class="container">
+            <div class="row">
+                <div class="welcomeText col-sm-6">
+                    <h1>안녕하세요<br>저는 최보경입니다.</h1>
+                    <p>개발 입문단계로 여러가지 개발환경을 접하고 있습니다.</p>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="social-icons" href="https://velog.io/@skrkdals4023" target="_blank">
+                                <img src="https://github.com/KangminNa/IntroductionPage/blob/main/images/velog.jpeg?raw=true" alt="Velog Icon" width="50" height="50">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-icons" href="https://github.com/KangminNa" target="_blank">
+                                <img src="https://github.com/KangminNa/IntroductionPage/blob/main/images/github.png?raw=true" alt="GitHub Icon" width="50" height="50">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <img src="images\자기소개.jpg" alt="Your Image" width="300">
+                    
+<!-- Trigger Button -->
+<button id="openModal">저의 작업 공간이 궁금하신가요?</button>
+
+<!-- Modal -->
+<div id="myModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+    <div style="background: white; padding: 20px; border-radius: 10px;">
+        <p>저의 깃허브주소에요!
+        <a href="https://github.com/bogyeong11" target="_blank" style="color: black; text-decoration: underline;">https://github.com/bogyeong11</a>
+        <br><br>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+<script>
+    const openModalButton = document.getElementById('openModal');
+    const closeModalButton = document.getElementById('closeModal');
+    const modal = document.getElementById('myModal');
+
+    openModalButton.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+
+    closeModalButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Close modal if user clicks outside of the modal content
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
+                </div>
+            </div> <!--row-->
+        </section><!--Container-->
+    </header>
+    
+  
+    <!-- Main Content -->
+    <main>
+        <!-- About ME-->
+        <section id="about" class = "bg-color">
+            <div class ="container content-lg ">
+                  <div class="row">
+                      <div class ="text-center col-md-3 col-sm-12"><h2>ABOUT ME</h2></div>
+                      <div class = "container text-justify col-md-9 col-sm-12">
+                        <p> 안녕하세요~ 저는 고려대학교 세종캠퍼스 환경시스템공학과 2학년 재학중인 최보경입니다. 개발과 밀접한 연관이 있는 전공을 공부하고 있지는 않지만, 개발에 흥미를 느껴 프론트엔드 개발 공부를 하고 있습니다.
+                            <br><br> 개발을 시작하고 나서 현재까지 초보자의 입장에서 본 개발은, 상상만 하던 것을 내 손으로 구현해낼 수 있는 아주 흥미로운 것이 아닐까 생각됩니다.
+                            <br><br> 최근에는 사람들과 함께 여러가지 프로젝트도 하면서 경험을 쌓고 있고, 개발 환경을 넓혀가고 있습니다.
+                            <br><br> mbti는 ENFJ 입니다!
+                        </p>                  
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            
+        </div>
+
+        <!-- skill-->
+        <section id="skill" class = "bg-color2 section-margin">
+            <div class ="container content-lg ">
+                  <div class="row">
+                      <div class ="text-center col-md-3 col-sm-12"><h2>Skill</h2></div>
+                      <div class = "container text-justify col-md-9 col-sm-12">
+                        <p> 저는 입문단계로, JavaScript, Html, CSS, React, C++등 여러가지 언어를 조금씩 사용할 줄 압니다.
+                            <br><br> 야생형 프로젝트와 충청톤 경험이 있습니다.
+                        </p> 
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About ME-->
+        <section id="ambitions" class = "bg-color section-margin">
+            <div class ="container content-lg ">
+                  <div class="row">
+                      <div class ="text-center col-md-3 col-sm-12"><h2>Ambitions</h2></div>
+                      <div class = "container text-justify col-md-9 col-sm-12">
+                        <p> 개발경험이 많이 부족함을 인지하고 있습니다.
+                            <br><br> 지금 쌓아둔 이 코딩 지식들이 나중에 분명히 도움이 될 것이라고 생각합니다. 
+                            <br><br> 많은 개발 경험과 스터디를 통해 성장해가는 멋진 개발자가 될 것입니다.
+                      </div>
+                </div>
+            </div>
+        </section>
+        
+       
+    
+    <!-- Footer -->
+    <footer class="footer bg-inverse">
+        <div class="container">
+            <span class= "text-muted">
+                <p>
+                    <i class= "fa fa-copyright"></i>
+                    2023 Kangmin Na
+                </p>
+            </span>
+        </div>
+    </footer>
+    
+    
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <!-- Back to Top Button -->
+<button id="backToTop" style="display: none; position: fixed; bottom: 20px; right: 20px; padding: 10px 15px; border-radius: 50%; background-color: rgb(177, 39, 50); color: white; border: none; cursor: pointer; font-size: 20px; box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);">
+    ▲
+
+<script>
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+</body>
+</html>

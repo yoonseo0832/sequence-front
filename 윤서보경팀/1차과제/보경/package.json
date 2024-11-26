@@ -1,0 +1,20 @@
+{
+  "name": "introductionpage",
+  "version": "1.0.0",
+  "description": "Codepen에서 한 템플릿을 참고하여 Bootstrap을 사용하여 만든 웹사이트입니다.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogyeong11/IntroductionPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogyeong11/IntroductionPage/issues"
+  },
+  "homepage": "https://github.com/bogyeong11/IntroductionPage#readme"
+}

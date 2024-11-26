@@ -1,0 +1,104 @@
+
+body {
+    color:dimgrey;
+}
+
+.content-lg {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.content-lg h2 {
+    font-size: 24px;
+}
+
+div {
+    display: block;
+}
+
+
+.brandSY {
+    margin-left: 2rem;
+}
+
+#myContent{
+    padding-right: 2rem;
+}
+
+
+
+.cover {
+    padding: 240px 0 150px;
+    background-image:  url("https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;  
+}   
+
+.welcome {
+    color: black;
+}
+
+.welcomeText h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+}
+
+.welcomeText p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: solid; 
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 1.25em;
+}
+
+.social-icons {
+    color: black;
+    text-align: start;
+} 
+
+.bg-color {
+    background-color: #F2F2F2;
+}
+
+.bg-color2 {
+    background-color: #ffffff;
+}
+
+.section-margin {
+    margin-bottom: 40px; 
+}
+
+
+
+.btn-primary{
+    background-color: gray;
+    border-color: dimgrey;
+}
+.card{
+    width: 32.4%;
+}
+
+
+.footer {
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+
+
+@media only screen and (max-width: 575px) {
+    .card{
+        width: 100%;
+    }
+}
+
+.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: background-color 0.3s ease; 
+}
