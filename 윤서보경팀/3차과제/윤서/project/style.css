@@ -71,9 +71,11 @@ nav .top-menu{
     padding-top: 205px;
     padding-left:19px;
 }
+
 .main-background .background-image img{
-    width: 100%;
-    height: 
+    width: 1966px;
+    height: 1079px;
+    padding-top: 316px;
 }
 
 .main-background .main-text{
@@ -85,21 +87,25 @@ nav .top-menu{
 }
 
 .main-text h1{
-
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
 }
 
 .main-bottom-btn{
-
-}
-
-.main-bottom-btn a{
-
+    justify-content: center;
+    align-items: center;
 }
 
 .main-bottom-btn img{
-
+    padding: 112px 580px 68px 580px;
 }
 
 .section-about{
+    height: 1901px;
+}
 
+.about-title{
+    padding-left: 345px;
+    padding-top: 164px;
 }
