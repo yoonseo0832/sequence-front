@@ -1,6 +1,8 @@
 body{
     margin: 0;
     width: 1980px;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
 }
 
 h2{
@@ -9,23 +11,32 @@ h2{
 }
 
 .top-bar{
+    display: flex;
     height: 100px;
 }
 
 .logo{
+    padding-right: 50px;
+    padding-top: 25.6px;
+    width: 179px;
+}
+nav .top-menu{
 
 }
 
-.top-menu{
-
+.top-menu a{
+    color: white;
 }
 
-.login-btn{
-
+.login-btn a{
+    color: #E32929;
+    text-decoration: none;
+    border: 3px solid #E32929;
 }
 
 .main-background{
-
+    position: relative;
+    text-align: center;
 }
 
 .main-text-image-1{
@@ -36,11 +47,20 @@ h2{
 
 }
 
-.background-image{
-
+.main-background .background-image img{
+    width: 100%;
+    height: 
 }
 
-.main-text{
+.main-background .main-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-text h1{
 
 }
 
