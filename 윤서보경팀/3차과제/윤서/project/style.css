@@ -14,23 +14,27 @@ h2{
 .top-bar{
     display: flex;
     height: 110px;
-    padding: 25.6px 50px;
+    padding: 0px 50px;
 }
 
 .logo{
-    padding-right: 50px;
     padding-top: 25.6px;
     width: 179px;
 }
-nav .top-menu{
+
+.top-menu{
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    gap: 180px;
+    padding-left: 540px;
+    align-items: center;
 }
 
 .top-menu a{
     color: white;
     font-size: 32px;
+    font-family: 'Playfair Display';
+    text-decoration: none;
     
 }
 
@@ -86,7 +90,7 @@ nav .top-menu{
     text-align: center;
 }
 
-.main-text h1{
+.main-text p{
     justify-content: center;
     align-items: center;
     font-size: 80px;
