@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    width: 1980px;
+    width: 1920px;
     box-sizing: border-box;
     background-color: #1E1E1E;
+    color: white;
 }
 
 h2{
@@ -12,7 +13,8 @@ h2{
 
 .top-bar{
     display: flex;
-    height: 100px;
+    height: 110px;
+    padding: 25.6px 50px;
 }
 
 .logo{
@@ -21,32 +23,54 @@ h2{
     width: 179px;
 }
 nav .top-menu{
-
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
 }
 
 .top-menu a{
     color: white;
+    font-size: 32px;
+    
 }
 
 .login-btn a{
     color: #E32929;
     text-decoration: none;
+    font-size: 28px;
     border: 3px solid #E32929;
 }
 
 .main-background{
     position: relative;
+    height: 2246px;
+    padding-top: 530px;
     text-align: center;
 }
 
-.main-text-image-1{
-
+.main-text-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px 0;
 }
 
-.main-text-image-2{
-
+.main-text-image-1 img{
+    width: 235px;
+    height: 555px;
+    margin-right: -10px;
+    padding-top: 9px;
+    padding-right: 40px;
+    gap: 31px;
 }
 
+.main-text-image-2 img{
+    width: 1595px;
+    height: 405px;
+    padding-top: 205px;
+    padding-left:19px;
+}
 .main-background .background-image img{
     width: 100%;
     height: 
