@@ -3,6 +3,10 @@ body{
     width: 1980px;
 }
 
+h2{
+    font-family: 'Playfair Display', serif;
+}
+
 .top-bar{
     height: 100px;
 }
