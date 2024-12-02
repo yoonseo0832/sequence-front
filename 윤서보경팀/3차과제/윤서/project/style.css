@@ -58,6 +58,7 @@ h2{
     align-items: center;
     position: relative;
     margin: 50px 0;
+    z-index: 1;
 }
 
 .main-text-image-1 img{
@@ -76,6 +77,12 @@ h2{
     padding-left:19px;
 }
 
+.main-background .background-image{
+    top: 50%;
+    transform: translate(0%, -45%);
+    overflow: hidden;
+}
+
 .main-background .background-image img{
     width: 1966px;
     height: 1079px;
@@ -84,7 +91,7 @@ h2{
 
 .main-background .main-text{
     position: absolute;
-    top: 50%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -93,7 +100,7 @@ h2{
 .main-text p{
     justify-content: center;
     align-items: center;
-    font-size: 80px;
+    font-size: 65px;
 }
 
 .main-bottom-btn{
@@ -112,4 +119,22 @@ h2{
 .about-title{
     padding-left: 345px;
     padding-top: 164px;
+}
+
+.benefit-title{
+    padding-left: 345px;
+    padding-top: 164px;
+}
+
+.partner-title{
+    padding-left: 345px;
+    padding-top: 164px;
+}
+.experience-title{
+    padding-left: 345px;
+    padding-top: 164px;
+}
+
+.who-made-title{
+    justify-content: center;
 }
