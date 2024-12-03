@@ -3,12 +3,13 @@ body{
     width: 1920px;
     box-sizing: border-box;
     background-color: #1E1E1E;
-    color: white;
+    color: #eeeeee;
 }
 
 h2{
     font-family: 'Playfair Display', serif;
     font-size: 64px;
+    color: #ffffff;
 }
 
 .top-bar{
@@ -31,7 +32,7 @@ h2{
 }
 
 .top-menu a{
-    color: white;
+    color: #eeeeee;
     font-size: 32px;
     font-family: 'Playfair Display';
     text-decoration: none;
@@ -73,8 +74,7 @@ h2{
 .main-text-image-2 img{
     width: 1595px;
     height: 405px;
-    padding-top: 205px;
-    padding-left:19px;
+    padding-top: 275px;
 }
 
 .main-background .background-image{
@@ -91,29 +91,27 @@ h2{
 
 .main-background .main-text{
     position: absolute;
-    top: 95%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
 
 .main-text p{
-    justify-content: center;
-    align-items: center;
     font-size: 65px;
 }
 
 .main-bottom-btn{
-    justify-content: center;
-    align-items: center;
-}
-
-.main-bottom-btn img{
-    padding: 112px 580px 68px 580px;
+    position: absolute;
+    top: 90%;
+    left: 606px;
 }
 
 .section-about{
     height: 1901px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 246px;
 }
 
 .about-title{
@@ -121,20 +119,306 @@ h2{
     padding-top: 164px;
 }
 
+.about-images-1 img,
+.about-images-2 img,
+.about-images-3 img{
+    position: absolute;
+}
+
+.about-images-1 img{
+    top: 342px;
+    right: 190px;
+    z-index: 0;
+}
+
+.about-images-2 img{
+    top: 1217px;
+    left: 345px;
+    z-index: 0;
+}
+
+.about-images-3 img{
+    top: 614px;
+    right: 505px;
+    z-index: 0;
+}
+
+.about-text-1{
+    position: absolute;
+    top: 727px;
+    left: 345px;
+    font-size: 32px;
+}
+
+.about-text-2{
+    position: absolute;
+    top: 1217px;
+    left: 1120px;
+    font-size: 32px;
+}
+
+.section-benefit{
+    position: relative;
+    width: 100%;
+    height: 2863px;
+}
+
 .benefit-title{
     padding-left: 345px;
     padding-top: 164px;
+}
+
+.position-1, .position-2, .position-3{
+    display: flex;
+    position: relative;
+    left: 345px;
+}
+
+.position-1{
+    gap: 9px;
+    top: 241px;
+}
+
+.position-2{
+    gap: 9px;
+    top: 460px;
+}
+
+.position-3{
+    gap: 9px;
+    top: 870px;
+}
+
+.benefit-image-1 img,
+.benefit-image-2 img,
+.benefit-image-3 img{
+     width: 380px;
+}
+
+.position-1 .benefit-shape img,
+.position-2 .benefit-shape img {
+    top: 65px;
+    left: 490px;
+    width: 135px;
+    transform: translate(-50%, -50%);
+}
+
+.position-3 .benefit-shape img{
+    top: -45px;
+    left: 490px;
+    width: 135px;
+    transform: translate(-50%, -50%);
+}
+
+.benefit-shape img {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    z-index: 1;
+}
+
+.benefit-text-1{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.6;
+    padding-top: 410px;
+}
+
+.benefit-text-2{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.6;
+    padding-top: 235px;
+}
+
+.benefit-text-3{
+    margin-left: 20px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 1.6;
+}
+
+.benefit-text-1 h3,
+.benefit-text-2 h3,
+.benefit-text-3 h3 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.section-partner{
+    position: relative;
+    width: 100%;
+    height: 1428px;
 }
 
 .partner-title{
     padding-left: 345px;
     padding-top: 164px;
 }
+
+.partner-things{
+    padding-left: 352px;
+}
+
+.partner-image{
+    left: 352px;
+    top: 300px;
+}
+
+.partner-text-1{
+    left: 352px;
+    top: 836px;
+    font-family: 'Playfair Display';
+    color: #E32929;
+    font-size: 80px;
+    font-style: italic;
+}
+
+.partner-text-2{
+    font-size: 32px;
+    color: #eeeeee;
+
+}
+
+.section-experience{
+    height: 1405px;
+    position: relative;
+    width: 100%;
+}
+
 .experience-title{
     padding-left: 345px;
     padding-top: 164px;
 }
 
-.who-made-title{
+.experience-wrapper{
+    display: flex;
+    position: relative;
     justify-content: center;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.experience-container {
+    display: flex;
+    gap: 40px; 
+    padding: 20px;
+    width: max-content; 
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.experience-item {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    background-color: #1E1E1E;
+}
+
+.image-box {
+    width: 444px;
+    height: 575px; 
+    background-color: #d9d9d9; 
+    margin-bottom: 20px;
+}
+
+.image-box:hover {
+    cursor: pointer;
+}
+
+.experience-item h4 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+.experience-item p {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #eeeeee; 
+}
+
+.section-footer{
+    position: relative;
+    width: 100%;
+    height: 1265px;
+    text-align: center;
+}
+
+.footer-image{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-image img{
+    padding-top: 247px;
+    padding-bottom: 132px;
+    object-fit: contain;
+}
+
+.footer-text-box{
+    background-color: #424242;
+    padding: 16px 414.5px;
+    display: inline-block;
+    color: #eeeeee;
+    font-size: 32px;;
+}
+
+.section-who-made{
+    height: 2004px;
+    position: relative;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    background-image: url('images/pexels-adrien-olichon-1257089-3709371.png');
+    background-position: center;
+    padding: 100px 0;
+}
+
+.who-made-title{
+    padding-left: 805px;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    gap: 100px; 
+    flex-wrap: wrap; 
+    padding: 0 50px;
+}
+
+.team{
+    text-align: left; 
+    max-width: 300px;
+}
+
+.team-title {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display';
+}
+
+.role {
+    font-size: 32px;
+    font-style: italic;
+    color: #ffffff; 
+    margin-top: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: "Noto Sans";
+}
+
+.member {
+    font-size: 32px;
+    line-height: 1.8;
+    font-style: italic;
+    color: white;
+    font-weight: 400;
+    font-family: "Noto Sans";
 }
