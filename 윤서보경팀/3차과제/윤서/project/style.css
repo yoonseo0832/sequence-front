@@ -301,6 +301,14 @@ h2{
     padding: 20px 0;
 }
 
+#scroll-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%; 
+    white-space: nowrap;
+}
+
 .experience-container {
     display: flex;
     gap: 40px; 
@@ -322,8 +330,8 @@ h2{
 .image-box {
     width: 444px;
     height: 575px; 
-    background-color: #d9d9d9; 
-    margin-bottom: 20px;
+    background-color: #d9d9d9;
+    flex-shrink: 0;
 }
 
 .image-box:hover {
