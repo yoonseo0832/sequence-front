@@ -351,6 +351,13 @@ h2{
     color: #eeeeee; 
 }
 
+.experience-item-1,
+.experience-item-2 {
+    display: flex;
+    flex-shrink: 0;
+    gap: 10px; /* 내부 아이템 간 간격 */
+}
+
 .section-footer{
     position: relative;
     width: 100%;
