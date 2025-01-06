@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #151515;
+    color: #eeeeee;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.title h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+h3{
+    font-family:'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+p{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 57.6px;
+    font-style: italic;
+}
+#role p{
+    font-weight: 100;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 110px;
+}
+
+.logo img{
+    padding-top: 25.6px;
+    width: 179px;
+    padding-left: 50px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 180px;
+    padding-left: 540px;
+}
+
+nav a {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 44.8px;
+    padding: 8px 12px;
+}
+
+.login-btn a {
+    color: #E32929;
+    font-size: 28px;
+    border: 3px solid #E32929;
+    text-decoration: none;
+}
+
+#main-section {
+    position: relative;
+    top: 432px;
+    height: 2246px;
+}
+
+.main-text-image1 {
+    position: relative;
+    z-index: 2;
+    float: left;
+    top:9px;
+    padding-left: 40px;
+    padding-right: 31px;
+}
+
+.main-text-image2 {
+    position: relative;
+    z-index: 1;
+    float: left;
+    top: 205px;
+    gap: 31px;
+}
+
+#background-image img {
+    width: 100%;
+    height: auto;
+    top: 316px;
+}
+
+.main-text {
+    text-align: center;
+    bottom: 264px;
+    left: 50%;
+    font-size: 80px;
+    color: #eeeeee;
+    font-weight: 700;
+}
+
+.main-bottom-btn img {
+    margin-top: 20px;
+    height: 84px;
+    width: 760px;
+    margin-left: 430px;
+}
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    width: 100%;
+    height: 1901px;
+    top:3195px;
+}
+
+.about-images1 img,
+.about-images2 img,
+.about-images3 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-text1, .about-text2 {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #eeeeee;
+}
+
+#benefit-section {
+    padding: 5% 10%;
+    width: 100%;
+    height: 2863px;
+    top: 5342px;
+}
+
+#position-1, #position-2, #position-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.benefit-shape img {
+    max-width: 100%;
+    height: auto;
+}
+
+#benefit-text1, #benefit-text2, #benefit-text3 {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+#partner-section {
+    background-color: #111111;
+    padding: 5% 10%;
+}
+
+.partner-image img {
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+#partner-text1 h1 {
+    font-size: 28px;
+    color: #E32929;
+}
+
+#partner-text2 {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#experience-section {
+    padding: 5% 10%;
+}
+
+.experience-container{
+    display: grid;
+    grid-gap: 40px;
+}
+.experience-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.experience-item {
+    background-color: #333333;
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.image-box {
+    width: 100%;
+    height: 150px;
+    background-color: #555555;
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 2% 10%;
+    background-color: #111111;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer .footer-text p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.who-made-section {
+    padding: 5% 10%;
+}
+
+.teams {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.team {
+    width: 45%;
+}
+
+.team-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.role {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #E32929;
+}
+
+.member {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
