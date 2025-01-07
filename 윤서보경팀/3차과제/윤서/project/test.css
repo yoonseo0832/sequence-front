@@ -1,336 +1,147 @@
-/* General Reset */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    background-color: #151515;
-    color: #eeeeee;
-    box-sizing: border-box;
+#root{
+    background-color:rgb(21, 21, 21) ;
 }
 
-/* Typography */
-h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 64px;
-    color: #ffffff;
-    margin: 0;
-}
-
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-p {
-    font-size: 32px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-/* Top Bar */
-.top-bar {
+.header-top{
+    width:100%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 110px;
-    padding: 0 50px;
-    background-color: #151515;
-}
-
-.logo img {
-    width: 179px;
-}
-
-.top-menu {
-    display: flex;
-    gap: 180px;
-}
-
-.top-menu a {
-    color: #eeeeee;
-    font-size: 32px;
-    font-family: 'Playfair Display', serif;
-    text-decoration: none;
-}
-
-.login-btn a {
-    color: #E32929;
-    font-size: 28px;
-    border: 3px solid #E32929;
-    padding: 5px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.main-background {
+    padding:1.5rem 0px;
+    margin: 0px auto;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: rgb(21,21,21);
     position: relative;
-    text-align: center;
-    height: 100vh;
+    z-index: 2;
 }
-
-.main-text-images {
+.pagelogo{
+    display:flex;
+    margin: 0.5rem 2rem;
+    position: relative;
+    width: clamp(2rem, 5vw, 6rem);
+    color:white;
+    cursor:pointer;
+}
+.header-text{
+    display: flex;
+    flex-direction: row;
+    margin-top: clamp(5px, 1vw, 10px);
+}
+.text1{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color:rgb(226,40,40);
+    font-size: clamp(0.75rem, 1.5vw, 2rem);
+    margin-right:10px;
+    font-family:SUIT;
+}
+.text2{
+    color:white;
+    margin:clamp(0.5rem, 1vw, 1rem) clamp(1.5rem, 2.5vw, 3rem) 0px 0px;
+    font-size: clamp(2.6rem, 3vw, 6rem);
+    font-weight: 600;
+    font-family: Alike, serif;
+}
+.bottom-image{
     display: flex;
     justify-content: center;
+}
+.bottom-image-s{
+    width:131px;
+    height:329px;
+    object-fit: cover;
+    margin-bottom:4rem;
+}
+.bottom-textbox{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.bottom-text{
+    width: 100%;
+    max-width:1219px;
+    min-width:320px;
+    height: 100px;
+    border:none;
+    background-color: rgb(66,66,66);
+    color: rgb(238,238,238);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 550;
+    padding:0px 2rem;
+    margin:0px 2rem;
+    font-size: clamp(1.25rem, 2vw, 2rem);
+}
+.blank2{
+    height:500px;
+    background-color: rgb(21,21,21);
+}
+.footer-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("images/WhoMadeImage.8573a1ad206903af4472.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-top: 50px;
+}
+.footer-textarea{
+    position: relative;
     z-index: 1;
-}
-
-.main-text-image-1 img {
-    width: 235px;
-    height: 555px;
-}
-
-.main-text-image-2 img {
-    width: 1595px;
-    height: 405px;
-    margin-left: 20px;
-}
-
-.background-image img {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.main-text {
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 65px;
-    color: #ffffff;
-}
-
-.main-bottom-btn img {
-    width: 200px;
-    margin-top: 20px;
-}
-
-/* About Section */
-.section-about {
-    padding: 100px 50px;
-    position: relative;
-    background-color: #151515;
-}
-
-.about-title {
-    margin-bottom: 50px;
-}
-
-.about-images-1 img,
-.about-images-2 img,
-.about-images-3 img {
-    width: 760px;
-    height: 489px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 30px;
-}
-
-.about-text-1,
-.about-text-2 {
-    font-size: 32px;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-/* Benefit Section */
-.section-benefit {
-    padding: 100px 50px;
-    background-color: #151515;
+.footer-title{
+    font-family: 'Alike', 'serif';
+    font-size: 4rem;
+    color: white;
 }
 
-.benefit-title {
-    margin-bottom: 50px;
+.title-text{
+    font-family: 'Alike', serif;
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    text-align: center;
 }
-
-.position-1,
-.position-2,
-.position-3 {
+.design-dev-part{
     display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 300px;
+}
+.footer-part-text{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
     align-items: center;
-    gap: 30px;
-    margin-bottom: 80px;
 }
-
-.benefit-image {
-    width: 380px;
-    height: auto;
+.role-text{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    color: rgb(136, 136, 136);
+    font-style: italic;
+    text-align: right;
 }
-
-.benefit-shape {
-    width: 100px;
-    height: auto;
+.name-text{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+    gap:1rem;
 }
-
-.benefit-text-1,
-.benefit-text-2,
-.benefit-text-3 {
-    max-width: 500px;
-}
-
-.section-experience {
-    padding: 100px 50px;
-    background-color: #151515;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.experience-title {
-    margin-bottom: 50px;
-    font-family: 'Playfair Display', serif;
-    font-size: 64px;
-    color: #ffffff;
-}
-
-#scroll-container {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-}
-
-.experience-container {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    animation: scroll-infinite 20s linear infinite;
-}
-
-.experience-item {
-    flex: 0 0 auto;
-    width: 300px;
-    background-color: #1E1E1E;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.image-box {
-    width: 100%;
-    height: 300px;
-    background-color: #d9d9d9;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.experience-item h4 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.experience-item p {
-    font-size: 18px;
-    color: #eeeeee;
-    line-height: 1.5;
-}
-
-@keyframes scroll-infinite {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
-/* Partner Section */
-.section-partner {
-    padding: 100px 50px;
-    background-color: #151515;
-    text-align: center;
-}
-
-.partner-title {
-    margin-bottom: 50px;
-}
-
-.partner-things {
+.design-dev-section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
 }
 
-.partner-image img {
-    width: 760px;
-    height: 489px;
-    border-radius: 8px;
-}
-
-/* Footer Section */
-.section-footer {
-    padding: 100px 50px;
-    background-color: #424242;
-    text-align: center;
-}
-
-.footer-image img {
-    width: 131px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.footer-text{
-    font-size: 32px;
-    color: #eeeeee;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #1E1E1E;
-    display: inline-block;
-}
-
-/* Who Made Section */
-.section-who-made {
-    padding: 100px 50px;
-    background-color: black;
-    text-align: center;
-    color: #ffffff;
-    background-image: url('images/pexels-adrien-olichon-1257089-3709371.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.who-made-title {
-    margin-bottom: 50px;
-}
-
-.teams {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.team {
-    max-width: 300px;
-    text-align: left;
-}
-
-.team-title {
-    font-size: 44px;
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 20px;
-}
-
-.role {
-    font-size: 32px;
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.member {
-    font-size: 32px;
-    line-height: 1.8;
-    color: #ffffff;
+.blank4{
+    background-color: rgb(15,15,15);
+    height: 10vh;
 }
