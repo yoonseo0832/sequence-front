@@ -1,5 +1,6 @@
 #root{
     background-color:rgb(21, 21, 21) ;
+    color: #eeeeee;
 }
 
 .header-top{
@@ -44,6 +45,209 @@
     font-weight: 600;
     font-family: Alike, serif;
 }
+
+.header-bottom{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    visibility: hidden;
+}
+.header-menu{
+    display: flex;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header-left{
+    display: flex;
+    width: 100%;
+}
+.header-left-upper{
+    margin-left: clamp(2rem, 2vw, 7rem);
+    display: flex;
+    color: white;
+    font-size: clamp(1rem, 3vw, 6rem);
+    height: 40%;
+    background-color: rgb(21, 21, 21);
+    width: 98%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-sizing:border-box;
+    cursor: pointer;
+}
+.header-right{
+    flex-flow: wrap;
+    margin-right: clamp(2rem, 2vw, 4rem);
+    width: 100%;
+}
+
+.header-right-left{
+    flex-wrap: wrap;
+    width :50%;
+}
+.header-right-upper1{
+    height: 40%;
+    font-size: clamp(1rem, 3vw, 6rem);
+    border: none;
+    background-color:rgb(21, 21, 21);
+    width: 98%;
+    margin-left: 0px;
+    padding: 1rem;
+    margin-bottom:1rem;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+.header-right-right{
+    flex-flow: column wrap;
+}
+.header-right-upper2{
+    font-size: clamp(1rem, 2vw, 6rem);
+    border: none;
+    background-color: rgb(21, 21, 21);
+    padding: 1rem;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.main-section{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+}
+.main-content{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+    background-color: rgb(21, 21, 21);
+}
+.main-logo{
+    display:flex;
+    margin: 0px auto;
+    flex-direction: row;
+    align-items: flex-end;
+    z-index: 1;
+}
+.s{
+    display: flex;
+    position: relative;
+    width: clamp(0.8rem, 10vw, 12.5vw);
+    margin-bottom: clamp(1rem, 5vw, 10rem);
+    margin-left: clamp(0.3rem, 0.5vw, 1rem);
+}
+.main-logo-text{
+    font-size: clamp(4rem, 23.5vw, 100vw);
+    color: rgb(227, 41,41);
+    font-family: impact, sans-serif;
+    margin: 0px;
+    align-self: flex-end;
+}
+.main-image{
+    position: relative;
+    margin-top: -15vw;
+    display: flex;
+    width: 100%;
+    z-index: 0;
+}
+.main-text{
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    margin-top:25rem;
+}
+.main-button{
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 0.3rem solid red;
+    margin-top: 10rem;
+    max-width: 120rem;
+    color: red;
+    padding: clamp(0.5rem, 1vw, 2rem) clamp(1rem, 2vw, 10rem);
+    font-size: clamp(0.8rem, 1.7vw, 3.5rem);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    white-space:pre;
+}
+.main-button:hover{
+    background-color: red;
+    color:white;
+}
+
+.about-section{
+    display: flex;
+    position: relative;
+    width: 75%;
+    margin: 0px auto;
+    flex-direction: column;
+}
+.title{
+    display: flex;
+    position: relative;
+    color: rgb(225,225,225);
+    font-family: Alike, serif;
+    font-size: clamp(3.5rem, 5vw, 7rem);
+    font-weight: bold;
+    text-align: left;
+}
+.about-part1{
+    display: flex;
+    margin-top:clamp(3.5rem, 5vw, 7rem);
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 0;
+}
+.parent-part1{
+    display: flex;
+    width: 46%;
+    align-items: flex-end;
+}
+
+.parent-part-class{display: none;}
+.about-part1-text{
+    display: flex;
+    width: 100%;
+    color: rgb(238,238,238);
+    font-size: clamp(1rem, 1.8vw, 3rem);
+    align-self: flex-end;
+    word-break: keep-all;
+    white-space: nowrap;
+    line-height: 1.5;
+}
+.about-part1-image{
+    display: flex;
+    width: 54%;
+}
+.about-shape{
+    display: flex;
+    position: relative;
+    width: 60%;
+    margin: -12vw auto;
+    z-index: 1;
+}
+.about-part2{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 0;
+}
+.about-part2-image{
+    display: flex;
+    width: 56%;
+}
+.about-part2-text
 .bottom-image{
     display: flex;
     justify-content: center;
@@ -58,6 +262,9 @@
     display:flex;
     justify-content: center;
     width: 100%;
+}
+svg{
+    font-size: clamp(2rem, 4vw, 8rem);
 }
 .bottom-text{
     width: 100%;
