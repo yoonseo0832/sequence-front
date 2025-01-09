@@ -16,9 +16,6 @@
     position: relative;
     z-index: 2;
 }
-.header-top:hover{
-    
-}
 .pagelogo {
     display: flex;
     margin: 0.5rem 2rem;
@@ -631,4 +628,8 @@ svg {
 .blank2 {
     height: 500px;
     background-color: rgb(21, 21, 21);
+}
+.blank5{
+    height: 200px;
+    background-color: rgb(21, 21, 21);;
 }
