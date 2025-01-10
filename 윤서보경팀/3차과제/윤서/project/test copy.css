@@ -16,7 +16,6 @@
     position: relative;
     z-index: 2;
 }
-
 .pagelogo {
     display: flex;
     margin: 0.5rem 2rem;
@@ -52,33 +51,25 @@
 
 .header-bottom {
     position: absolute;
-    top: 100%;
-    left: 0;
+    left: 0px;
     width: 100%;
-    background-color: rgb(21, 21, 21);
-    visibility: hidden;
+    background-color: white;
     transform: translateY(-100%);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 100;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    visibility: hidden;
 }
 
 .header-menu {
     display: flex;
-    flex-direction: column;
-
-}
-
-.header-top:hover .header-bottom .header-right{
-    visibility: visible !important; 
-    transform: translateY(0) !important; 
-    opacity: 1 !important;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 .header-left {
     display: flex;
     width: 100%;
-    flex-direction: row;
 }
 
 .header-left-upper {
@@ -96,11 +87,7 @@
 }
 
 .header-right {
-    display: flex;
     flex-flow: wrap;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: flex-end;
     margin-right: clamp(2rem, 2vw, 4rem);
     width: 100%;
 }
@@ -642,9 +629,7 @@ svg {
     height: 500px;
     background-color: rgb(21, 21, 21);
 }
-
-.blank5 {
+.blank5{
     height: 200px;
-    background-color: rgb(21, 21, 21);
-    ;
+    background-color: rgb(21, 21, 21);;
 }
