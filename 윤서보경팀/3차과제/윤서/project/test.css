@@ -95,7 +95,6 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 .header-top:hover + .header-bottom,
 .header-bottom:hover {
     transform: translateY(0);
@@ -468,60 +467,66 @@ svg {
     overflow: hidden;
 }
 
-.experience-scroll-slider {
-    display: block;
+.custom-slider {
     position: relative;
-    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden; /* Hide the overflowing slides */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
 }
 
-.slick-prev {
-    left: -25px;
+.slides {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth slide animation */
 }
 
-.slick-next,
-.slick-next:focus,
-.slick-next:hover,
-.slick-prev,
-.slick-prev:focus,
-.slick-prev:hover {
-    background: #0000;
-    color: #0000;
-    outline: none;
+.slide {
+    flex: 0 0 100%; /* Each slide takes up 100% of the container */
+    text-align: center;
+    padding: 20px;
 }
 
-.slick-next,
-.slick-prev {
-    border: none;
-    cursor: pointer;
-    font-size: 0;
-    height: 20px;
-    line-height: 0;
-    padding: 0;
+.box {
+    height: 200px;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.box-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.box-p {
+    font-size: 1rem;
+    color: #555;
+}
+
+button.prev,
+button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.slick-slider,
-.slick-list {
-    transform: translateZ(0);
+button.prev {
+    left: 10px;
 }
 
-.slick-list {
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
+button.next {
+    right: 10px;
 }
 
-.slick-next {
-    right: -25px;
-}
-
-.slick-next {
-    background: #0000;
-    color: #0000;
-    outline: none;
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 .footer-section {
