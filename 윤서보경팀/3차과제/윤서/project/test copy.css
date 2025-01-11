@@ -16,6 +16,7 @@
     position: relative;
     z-index: 2;
 }
+
 .pagelogo {
     display: flex;
     margin: 0.5rem 2rem;
@@ -65,17 +66,26 @@
     background-color: rgb(21, 21, 21);
     justify-content: space-between;
     flex-direction: row;
+    z-index: 2;
+}
+
+.header-top:hover .header-bottom .header-right {
+    visibility: visible !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
 }
 
 .header-left {
     display: flex;
     width: 100%;
+    flex-direction: row;
 }
 
 .header-left-upper {
     margin-left: clamp(2rem, 2vw, 7rem);
     display: flex;
     color: white;
+    border: none;
     font-size: clamp(1rem, 3vw, 6rem);
     height: 40%;
     background-color: rgb(21, 21, 21);
@@ -87,35 +97,45 @@
 }
 
 .header-right {
-    flex-flow: wrap;
     margin-right: clamp(2rem, 2vw, 4rem);
-    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 .header-right-left {
+    display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
     width: 50%;
 }
 
 .header-right-upper1 {
+    display: flex;
+    color: white;
     height: 40%;
     font-size: clamp(1rem, 3vw, 6rem);
     border: none;
     background-color: rgb(21, 21, 21);
     width: 98%;
-    margin-left: 0px;
     padding: 1rem;
+    margin-left: 0px;
     margin-bottom: 1rem;
     box-sizing: border-box;
     cursor: pointer;
 }
 
 .header-right-right {
+    display: flex;
+    justify-content: flex-end;
     flex-flow: column wrap;
 }
 
 .header-right-upper2 {
-    font-size: clamp(1rem, 2vw, 6rem);
+    display: flex;
+    color: white;
+    font-size: clamp(1rem, 3vw, 6rem);
     border: none;
     background-color: rgb(21, 21, 21);
     padding: 1rem;
@@ -124,7 +144,6 @@
     box-sizing: border-box;
     cursor: pointer;
 }
-
 .main-section {
     display: flex;
     flex-direction: column;
