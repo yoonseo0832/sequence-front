@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'SUIT-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #151515;
+    color: #FFFFFF;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Styles */
+.header-top {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #151515;
+
+    top: 0;
+    z-index: 100;
+}
+
+.header-top img {
+    width: 138px; 
+    margin-left: 100px;
+}
+
+.header-top ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 160px;
+}
+
+.header-top ul li {
+    margin: 0 15px;
+}
+
+.header-top ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header-top ul li a:hover {
+    color: #E32929;
+}
+
+#login-btn {
+    background: none;
+    color: #E32929;
+    border: 1px solid #E32929;
+    padding: 10px 20px;
+    width: 114px;
+    cursor: pointer;
+    font-size: 24px;
+    font-style:italic;
+    line-height: 33.6px;
+    font-family: 'Playfair Display';
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#login-btn:hover {
+    background: #E32929;
+    color: white;
+}
+
+/* Content Styles */
+#content {
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageIcon {
+    margin: 20px auto;
+    margin-top: 120px;
+    display: block;
+}
+
+#content-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 120px;
+}
+
+input {
+    background-color: #212121;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 0 15px;
+    display: block;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #757575;
+    font-size: 18px;
+    font-family: 'SUIT-Regular';
+}
+
+.findText {
+    display: inline-block;
+    color: #BDBDBD;
+    font-size: 14px;
+    margin: 10px 15px;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.findText:hover {
+    color: #E32929;
+}
+
+#content-login-btn, #content-member-btn {
+    height: 56px;
+    width: 80%;
+    margin: 15px auto;
+    font-size: 16px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#arrow{
+
+}
+
+#content-login-btn {
+    background-color: #E32929;
+}
+
+#content-login-btn:hover {
+    background-color: #B22222;
+}
+
+#content-member-btn {
+    background-color: transparent;
+    border: 2px solid #E32929;
+    color: #E32929;
+}
+
+#content-member-btn:hover {
+    background-color: #E32929;
+    color: white;
+}

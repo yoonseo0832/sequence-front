@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sequence</title>
     <link rel="icon" href="images/Group 11.png">
+    <link href="loginPage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /*
         #root {
             background-color: #151515;
             width: 100%;
@@ -15,6 +17,9 @@
 
         #content-title {
             color: white;
+            font-size: 44px;
+            font-weight: 500;
+            text-align: center;
         }
 
         #content {
@@ -27,12 +32,8 @@
             height: auto;
             display: flex;
             align-items: center;
-            padding: 1.5rem 0;
-            margin: 0 auto;
             justify-content: space-between;
             background-color: rgb(21, 21, 21);
-            position: relative;
-            z-index: 2;
         }
         ul{
             list-style-type: none;   
@@ -47,7 +48,28 @@
         .findText{
             color: #BDBDBD;
         }
-
+        input{
+            background-color: #212121;
+            height: 45px;
+            width: 30%;
+            border-style: none;
+        }
+        #content-login-btn{
+            height: 45px;
+            background-color: #E32929;
+            width: 30.4%;
+            border-style: none;
+        }
+        #content-member-btn{
+            height: 45px;
+            width: 30.4%;
+            border-style: none;
+        }
+        .pageIcon{
+            align-items: center;
+            justify-content: center;
+        }
+            */
     </style>
 </head>
 
@@ -65,12 +87,14 @@
         <div id="content">
             <img src="images/Group 10.png" alt="iconLogo" class="pageIcon">
             <h3 id="content-title">Login</h3>
-            <input type="text" name="userId" id="inputId">
-            <input type="password" name="userPwd" id="inputPwd">
-            <a href="" class="findText">아이디찾기</a>
-            <a href="" class="findText">비밀번호 찾기</a>
+            <input type="text" name="userId" id="inputId" placeholder="아이디를 입력해주세요">
+            <input type="password" name="userPwd" id="inputPwd" placeholder="비밀밀를 입력해주세요">
+            <a href="" class="findText">아이디찾기 ></a>
+            <a href="" class="findText">비밀번호 찾기 ></a>
             <button id="content-login-btn">로그인</button>
-            <button id="content-member-btn">회원가입하기</button>
+            <button id="content-member-btn">회원가입하기
+                <img src="images/Union.png" id="arrow">
+            </button>
         </div>
     </div>
 </body>
