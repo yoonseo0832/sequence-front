@@ -76,8 +76,9 @@
 <body>
     <div id="root">
         <div class="header-top">
-            <img src="images/logo_Text.png" alt="textLogo" class="pageLogo">
+            <!--<img src="images/logo_Text.png" alt="textLogo" class="pageLogo">-->
             <ul>
+                <li><img src="images/logo_Text.png" alt="textLogo" class="pageLogo"></li>
                 <li><a href="">Project</a></li>
                 <li><a href="">Announcement</a></li>
                 <li><a href="">Archive</a></li>
@@ -87,15 +88,25 @@
         <div id="content">
             <img src="images/Group 10.png" alt="iconLogo" class="pageIcon">
             <h3 id="content-title">Login</h3>
+            <p id="wrongId" style="visibility: hidden;">존재하지 않는 아이디입니다.</p>
             <input type="text" name="userId" id="inputId" placeholder="아이디를 입력해주세요">
-            <input type="password" name="userPwd" id="inputPwd" placeholder="비밀밀를 입력해주세요">
-            <a href="" class="findText">아이디찾기 ></a>
-            <a href="" class="findText">비밀번호 찾기 ></a>
-            <button id="content-login-btn">로그인</button>
-            <button id="content-member-btn">회원가입하기
-                <img src="images/Union.png" id="arrow">
-            </button>
+            <input type="password" name="userPwd" id="inputPwd" placeholder="비밀번호를 입력해주세요">
+            <div id="findSet">
+                <a href="" class="findText-id">아이디찾기 ></a>
+                <a href="" class="findText-pwd">비밀번호 찾기 ></a>
+            </div>
+            <div id="btns">
+                <button id="content-login-btn" onClick="loginButton();">로그인</button>
+                <button id="content-member-btn"><p id="member-arrow-merg">회원가입하기<img src="images/Union.png" id="arrow"></p>
+                </button>
+            </div>
         </div>
     </div>
+    <script>
+        function loginButton(){
+            const wrongIdMessage = document.getElementById('wrongId');
+            wrongIdMessage.style.visibility = 'visible';
+        }
+    </script>
 </body>
 </html>
