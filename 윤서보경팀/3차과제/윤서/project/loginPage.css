@@ -105,8 +105,8 @@ body {
     color: #E32929;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 600;
-    /*font-family*/
+    font-weight: 400;
+    font-family: 'SUIT-Regular';
 }
 
 input {
