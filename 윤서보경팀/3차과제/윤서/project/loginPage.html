@@ -97,16 +97,39 @@
             </div>
             <div id="btns">
                 <button id="content-login-btn" onClick="loginButton();">로그인</button>
-                <button id="content-member-btn"><p id="member-arrow-merg">회원가입하기<img src="images/Union.png" id="arrow"></p>
+                <button id="content-member-btn">
+                    <p id="member-arrow-merg">회원가입하기<img src="images/Union.png" id="arrow"></p>
                 </button>
             </div>
         </div>
     </div>
     <script>
-        function loginButton(){
+        function loginButton() {
             const wrongIdMessage = document.getElementById('wrongId');
             wrongIdMessage.style.visibility = 'visible';
         }
+        document.addEventListener("DOMContentLoaded", () => {
+            const passwordInput = document.querySelector("#inputPwd");
+            let password = "";
+
+            if (passwordInput) {
+                passwordInput.addEventListener("input", (event) => {
+                    const currentValue = event.target.value;
+
+                    const newPass = currentValue.slice(password.length);
+
+                    password += newPass;
+
+                    setTimeout(() => {
+                        passwordInput.value = "";
+                        for (let i = 0; i < password.length; i++) {
+                            passwordInput.value += "*";
+                        }
+                    }, 500);
+                });
+            }
+        });
     </script>
 </body>
+
 </html>
