@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sequence</title>
     <link rel="icon" href="images/Group 11.png">
-    <link href="loginPage.css" rel="stylesheet">
+    <!--<link href="loginPage.css" rel="stylesheet">-->
+    <link href="updated_loginPage.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -28,7 +29,8 @@
             <h3 id="content-title">Login</h3>
             <p id="wrongId" style="visibility: hidden;">존재하지 않는 아이디입니다.</p>
             <input type="text" name="userId" id="inputId" placeholder="아이디를 입력해주세요">
-            <input type="password" name="userPwd" id="inputPwd" placeholder="비밀번호를 입력해주세요">
+            <input type="password" name="userPwd" id="inputPwd" id="displayPwd" placeholder="비밀번호를 입력해주세요">
+            <input type="hidden" id="realPwd">
             <div id="findSet">
                 <a href="" class="findText-id">아이디찾기 ></a>
                 <a href="" class="findText-pwd">비밀번호 찾기 ></a>
@@ -47,26 +49,31 @@
             wrongIdMessage.style.visibility = 'visible';
         }
         document.addEventListener("DOMContentLoaded", () => {
-            const passwordInput = document.querySelector("#inputPwd");
+            const displayPwd = document.querySelector("#displayPwd");
+            const realPwd = document.querySelector("#realPwd");
             let password = "";
 
-            if (passwordInput) {
-                passwordInput.addEventListener("input", (event) => {
+            if (displayPwd && realPwd) {
+                displayPwd.addEventListener("input", (event) => {
                     const currentValue = event.target.value;
 
-                    const newPass = currentValue.slice(password.length);
+                    if (currentValue.length > password.length) {
+                        // Add new characters to password
+                        password += currentValue.slice(password.length);
+                    } else if (currentValue.length < password.length) {
+                        // Remove last character from password
+                        password = password.slice(0, -1);
+                    }
 
-                    password += newPass;
+                    // Update hidden input value
+                    realPwd.value = password;
 
-                    setTimeout(() => {
-                        passwordInput.value = "";
-                        for (let i = 0; i < password.length; i++) {
-                            passwordInput.value += "*";
-                        }
-                    }, 500);
+                    // Replace visible input with '*'
+                    displayPwd.value = "*".repeat(password.length);
                 });
             }
         });
+
     </script>
 </body>
 

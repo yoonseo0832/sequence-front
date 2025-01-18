@@ -131,11 +131,10 @@ input {
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease, outline 0.3s ease;
 }
-input[type="password"]{
+/*input[type="password"]{
     font-family: 'pass','Roboto', Helvetica, Arial, sans-serif;
-    -webkit-text-security: disc; /* Webkit */
-    -moz-text-security: disc; /* Older Firefox */
-}
+    -webkit-text-security: disc; 
+}*/
 input::placeholder {
     color: #757575;
     font-size: 18px;
