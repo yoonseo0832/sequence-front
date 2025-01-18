@@ -91,7 +91,7 @@
     background-color: rgb(21, 21, 21);
     padding: 0.8rem 1.2rem;
     cursor: pointer;
-    text-align: center;
+    text-align: start;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
