@@ -21,7 +21,7 @@ body {
 
 #root {
     width: 100%;
-    min-height: 100vh;
+    height: 1268px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +114,7 @@ body {
     font-weight: 400;
     font-family: 'SUIT-Regular';
 }
-
+/*
 input {
     background-color: #212121;
     color: #FFFFFF;
@@ -131,10 +131,18 @@ input {
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease, outline 0.3s ease;
 }
-/*input[type="password"]{
-    font-family: 'pass','Roboto', Helvetica, Arial, sans-serif;
-    -webkit-text-security: disc; 
-}*/
+*/
+ul {
+    display: flex;
+    list-style: none;
+}
+#list-1, #list-3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'SUIT';
+    flex-wrap:wrap ;
+}
 input::placeholder {
     color: #757575;
     font-size: 18px;
@@ -164,6 +172,19 @@ input::placeholder {
     font-family: 'Noto Sans', sans-serif;
     padding-left: 235px;
     transition: color 0.3s ease;
+}
+#title{
+    font-size: 44px;
+    line-height: 66px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'SUIT';
+}
+.content-area{
+    width: 1429px;
+    height: 552px;
+    margin: 0 auto;
+    background-color: aqua;
 }
 
 .findText:hover {
