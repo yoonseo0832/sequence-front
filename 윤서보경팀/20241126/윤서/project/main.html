@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequence</title>
+    <link rel="icon" href="images/Group 11.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root">
+        <div class="header-top">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABoCAYAAACwna0IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU2SURBVHgB7Z1PbhNNEMWrxxMIsPj8LUEJjBcRY2/IDXBuwA0INwgniHOChBMAJ0huYN8gYYMHsYhJLFiSHSBsF1XESCZy4u6Z6emH5J+ECGYsxMvrrj9d7hCBcpqmCYETEyDnrdYBE/0nX74gYAyBIcJ1iHlXvx4xNxpZNiBQIgJiVjilFkW7BAyM84bN5o4s1f2rryO7D8J5Z2m6PU84Bdl9wZ03bLU2mfn4pmdQ3RfeecyHix5BdV9w8diYi0XPGOZtxLwvuHhmMjmxeQ7RfQjOsxIP0X0Ie94720fR3BdcvNHqqpXzFDT3BRevcXJyIfnSwPb52Jh9AgGjPGPuOTz97DxN2wQAhHi2QWMGiL0PQzyiT05vMKaN4D4I8cbMrs5TgrsPQrzfdatFpfEX4r5Pjx/vUEBw+nk53BdJ3neaJHUKBIx4su/lWbr12p07wZYvkvOsK41ZJEfcGW5sbFIAYMSLxuM8zvsN12pBEmcY8X7euzegvAQKHlCnZ3IAdCzLN+8SvDCj0dbax4+5HewK1OmZbW/vGuqTOD6sMvpCiZejTPsLWUZJldEXSry8EXcWjb5V7X9Q4rn09m5Ckuf9KmpfKPFce3s3Ysyh7/wPa9lS7kpjHnWO465PARHFG1B5eBUQTrwygsYVVMBjH0EETrwxUY88oEHkrNV6XWYeCDefp0il8VUc6CXZ1W0hYu6sZdlbKgjesr1kQJ7QRFqS8TeSynSLpjOQ4rHbaVo+pJkgv7rnzebxME2f5zkPhpxJNh6dN4dNdaIKIU7siaBHGrRG37+fNAaDG48GIPc8TS00QlJo9Fxl2qyYl0JBOk97e/GPHxQcDVq6vGm+yyCdpwybzVP5bicEDGq0dR3BCAKseEV7e1WAK57rCEYAYMXLOYJRKbABQ/FZppUBbsBQwN0HLV6JjVEvoDuv7N5eqUCLV2QEowqgA4YiXY8uLVmyZAZzlqavCZSHWYZ9x4DsKUyg1KSr8qDfhy3ToKPthLlNwGCLZ0yQcVlboMUzk0lCwGCXZ1G0dF5e9Iw15OcsFoFd2wrx6iqs++DFk+bAEwIFXjwGjrjw4pmleIWAFU8nBnqzL5jpQTPSgfPpxsZmo8IPp9gSr/f7W9f9paYJEu2e0OXSaRsdigkg6kqtpkEDTjznZuh5mj6VN23rDEdVQsq/c/Cw339JYBTqJOvVbZExu95FZO6tZ9kWgVFKG17OV3flP9ghf1zI9vI/gVHaGcaXNE3GxnR9uRCxt1daqnI/ywZr/X5D9sIOeWAEmO+Vnuetv3+/50NAMx4nBIaXJFkFZOZSzx8QyzRvFYYc3rwpVcDpeCsSXsszFVAiUin5GWJvz3ttK0FEryo/oDJYWUkIiEoaA9PqoEcFiaPoKQFRWVcllv2v6IdT0IJGZeJpHlg0gKD19irt50l92iu4/yUEROXN0PHt23sFlm/9c7P5iECoXDy9hKHI8kUawQjShtflK78dUQ6QRjCCnWFI9H3pfFsjYY1gBBPv/uWPaHAOHkgjGEFPz0a3br1yDR5IZVpQ8TR4SADYI0dqd+9CVBrBz221eUCOpRtKbw/lenMn96GUaRDiTVOXnvUbQHp7SLfVWrsPJWjAiOfsPoDeHtrNjdbum45gBAVKPBf3IZRpiFfAWbnP5L8SuDTgxLN239J512DjvsmkQ4GBFG+h+5g76x8+vKLAIN/os3fN6x0R17ke9gH21SCXn/Ju//kz2pAj+gUNsw47QpsO/VfuGKiPvn3bWnQZ4JIr6A8PRv382S+1ruRLaJxgRwAAAABJRU5ErkJggg=="
+                alt="logo" class="pagelogo" href="test.html">
+            <div class="header-text">
+                <div class="text1">NOW</div>
+                <div class="text2">Project</div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-menu">
+                <div class="header-right">
+                    <div class="header-right-left">
+                        <button class="header-right-upper1">Announcement</button>
+                        <button class="header-right-upper1">Info.</button>
+                    </div>
+                    <div class="header-right-right">
+                        <button class="header-right-upper2">Archive</button>
+                        <button class="header-right-upper2">Login</button>
+                    </div>
+                </div>
+                <!--<div class="header-left">
+                    <button class="header-left-upper"></button>
+                </div>-->
+            </div>
+        </div>
+        <div class="blank1" style="height:150px;"></div>
+        <div class="main-section">
+            <div class="main-content">
+                <div class="main-logo">
+                    <img src="data:image/png;base64,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"
+                        class="s">
+                    <div class="main-logo-text">equence</div>
+                </div>
+                <img rel="preload"
+                    src="https://seungyun-park.github.io/sequence/static/media/running.5193bedf9a9412192925.png"
+                    class="main-image">
+            </div>
+            <div class="main-text">새로운 이야기를 만든다. 시퀀스</div>
+            <button class="main-button">
+                <p>프로젝트 올리고 새로운 이야기를 만들어보세요!</p>&nbsp;&nbsp;&nbsp;
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                    width="1em" xmlns="http://www.w3.org/2000/svg" style="font-size: clamp(2rem, 4vw, 8rem);">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
+                    </path>
+                </svg>
+            </button>
+        </div>
+        <div class="blank2"></div>
+        <div class="about-section">
+            <div class="about-title">About</div>
+            <div class="about-part1">
+                <div class="parent-part1">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABoCAYAAACwna0IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU2SURBVHgB7Z1PbhNNEMWrxxMIsPj8LUEJjBcRY2/IDXBuwA0INwgniHOChBMAJ0huYN8gYYMHsYhJLFiSHSBsF1XESCZy4u6Z6emH5J+ECGYsxMvrrj9d7hCBcpqmCYETEyDnrdYBE/0nX74gYAyBIcJ1iHlXvx4xNxpZNiBQIgJiVjilFkW7BAyM84bN5o4s1f2rryO7D8J5Z2m6PU84Bdl9wZ03bLU2mfn4pmdQ3RfeecyHix5BdV9w8diYi0XPGOZtxLwvuHhmMjmxeQ7RfQjOsxIP0X0Ie94720fR3BdcvNHqqpXzFDT3BRevcXJyIfnSwPb52Jh9AgGjPGPuOTz97DxN2wQAhHi2QWMGiL0PQzyiT05vMKaN4D4I8cbMrs5TgrsPQrzfdatFpfEX4r5Pjx/vUEBw+nk53BdJ3neaJHUKBIx4su/lWbr12p07wZYvkvOsK41ZJEfcGW5sbFIAYMSLxuM8zvsN12pBEmcY8X7euzegvAQKHlCnZ3IAdCzLN+8SvDCj0dbax4+5HewK1OmZbW/vGuqTOD6sMvpCiZejTPsLWUZJldEXSry8EXcWjb5V7X9Q4rn09m5Ckuf9KmpfKPFce3s3Ysyh7/wPa9lS7kpjHnWO465PARHFG1B5eBUQTrwygsYVVMBjH0EETrwxUY88oEHkrNV6XWYeCDefp0il8VUc6CXZ1W0hYu6sZdlbKgjesr1kQJ7QRFqS8TeSynSLpjOQ4rHbaVo+pJkgv7rnzebxME2f5zkPhpxJNh6dN4dNdaIKIU7siaBHGrRG37+fNAaDG48GIPc8TS00QlJo9Fxl2qyYl0JBOk97e/GPHxQcDVq6vGm+yyCdpwybzVP5bicEDGq0dR3BCAKseEV7e1WAK57rCEYAYMXLOYJRKbABQ/FZppUBbsBQwN0HLV6JjVEvoDuv7N5eqUCLV2QEowqgA4YiXY8uLVmyZAZzlqavCZSHWYZ9x4DsKUyg1KSr8qDfhy3ToKPthLlNwGCLZ0yQcVlboMUzk0lCwGCXZ1G0dF5e9Iw15OcsFoFd2wrx6iqs++DFk+bAEwIFXjwGjrjw4pmleIWAFU8nBnqzL5jpQTPSgfPpxsZmo8IPp9gSr/f7W9f9paYJEu2e0OXSaRsdigkg6kqtpkEDTjznZuh5mj6VN23rDEdVQsq/c/Cw339JYBTqJOvVbZExu95FZO6tZ9kWgVFKG17OV3flP9ghf1zI9vI/gVHaGcaXNE3GxnR9uRCxt1daqnI/ywZr/X5D9sIOeWAEmO+Vnuetv3+/50NAMx4nBIaXJFkFZOZSzx8QyzRvFYYc3rwpVcDpeCsSXsszFVAiUin5GWJvz3ttK0FEryo/oDJYWUkIiEoaA9PqoEcFiaPoKQFRWVcllv2v6IdT0IJGZeJpHlg0gKD19irt50l92iu4/yUEROXN0PHt23sFlm/9c7P5iECoXDy9hKHI8kUawQjShtflK78dUQ6QRjCCnWFI9H3pfFsjYY1gBBPv/uWPaHAOHkgjGEFPz0a3br1yDR5IZVpQ8TR4SADYI0dqd+9CVBrBz221eUCOpRtKbw/lenMn96GUaRDiTVOXnvUbQHp7SLfVWrsPJWjAiOfsPoDeHtrNjdbum45gBAVKPBf3IZRpiFfAWbnP5L8SuDTgxLN239J512DjvsmkQ4GBFG+h+5g76x8+vKLAIN/os3fN6x0R17ke9gH21SCXn/Ju//kz2pAj+gUNsw47QpsO/VfuGKiPvn3bWnQZ4JIr6A8PRv382S+1ruRLaJxgRwAAAABJRU5ErkJggg=="
+                        class="parent-part-class">
+                    <div class="about-part1-text">
+                        시퀀스는 IT 서비스 개발을 원하는<br>
+                        개발, 디자인 부문의 대학생들이 모여<br>
+                        함께 프로젝트를 진행하는 공간입니다.
+                    </div>
+                </div>
+                <img src="https://seungyun-park.github.io/sequence/static/media/About1.ce4f9adf2506df4ae2f6.png"
+                    class="about-part1-image">
+            </div>
+            <img src="https://seungyun-park.github.io/sequence/static/media/LogoEmpty.4a8dbc9108bac40ca967.png"
+                class="about-shape">
+            <div class="about-part2">
+                <img src="https://seungyun-park.github.io/sequence/static/media/About2.44877c0c5bc0185128c2.png"
+                    class="about-part2-image">
+                <div class="parent-part2">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABoCAYAAACwna0IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU2SURBVHgB7Z1PbhNNEMWrxxMIsPj8LUEJjBcRY2/IDXBuwA0INwgniHOChBMAJ0huYN8gYYMHsYhJLFiSHSBsF1XESCZy4u6Z6emH5J+ECGYsxMvrrj9d7hCBcpqmCYETEyDnrdYBE/0nX74gYAyBIcJ1iHlXvx4xNxpZNiBQIgJiVjilFkW7BAyM84bN5o4s1f2rryO7D8J5Z2m6PU84Bdl9wZ03bLU2mfn4pmdQ3RfeecyHix5BdV9w8diYi0XPGOZtxLwvuHhmMjmxeQ7RfQjOsxIP0X0Ie94720fR3BdcvNHqqpXzFDT3BRevcXJyIfnSwPb52Jh9AgGjPGPuOTz97DxN2wQAhHi2QWMGiL0PQzyiT05vMKaN4D4I8cbMrs5TgrsPQrzfdatFpfEX4r5Pjx/vUEBw+nk53BdJ3neaJHUKBIx4su/lWbr12p07wZYvkvOsK41ZJEfcGW5sbFIAYMSLxuM8zvsN12pBEmcY8X7euzegvAQKHlCnZ3IAdCzLN+8SvDCj0dbax4+5HewK1OmZbW/vGuqTOD6sMvpCiZejTPsLWUZJldEXSry8EXcWjb5V7X9Q4rn09m5Ckuf9KmpfKPFce3s3Ysyh7/wPa9lS7kpjHnWO465PARHFG1B5eBUQTrwygsYVVMBjH0EETrwxUY88oEHkrNV6XWYeCDefp0il8VUc6CXZ1W0hYu6sZdlbKgjesr1kQJ7QRFqS8TeSynSLpjOQ4rHbaVo+pJkgv7rnzebxME2f5zkPhpxJNh6dN4dNdaIKIU7siaBHGrRG37+fNAaDG48GIPc8TS00QlJo9Fxl2qyYl0JBOk97e/GPHxQcDVq6vGm+yyCdpwybzVP5bicEDGq0dR3BCAKseEV7e1WAK57rCEYAYMXLOYJRKbABQ/FZppUBbsBQwN0HLV6JjVEvoDuv7N5eqUCLV2QEowqgA4YiXY8uLVmyZAZzlqavCZSHWYZ9x4DsKUyg1KSr8qDfhy3ToKPthLlNwGCLZ0yQcVlboMUzk0lCwGCXZ1G0dF5e9Iw15OcsFoFd2wrx6iqs++DFk+bAEwIFXjwGjrjw4pmleIWAFU8nBnqzL5jpQTPSgfPpxsZmo8IPp9gSr/f7W9f9paYJEu2e0OXSaRsdigkg6kqtpkEDTjznZuh5mj6VN23rDEdVQsq/c/Cw339JYBTqJOvVbZExu95FZO6tZ9kWgVFKG17OV3flP9ghf1zI9vI/gVHaGcaXNE3GxnR9uRCxt1daqnI/ywZr/X5D9sIOeWAEmO+Vnuetv3+/50NAMx4nBIaXJFkFZOZSzx8QyzRvFYYc3rwpVcDpeCsSXsszFVAiUin5GWJvz3ttK0FEryo/oDJYWUkIiEoaA9PqoEcFiaPoKQFRWVcllv2v6IdT0IJGZeJpHlg0gKD19irt50l92iu4/yUEROXN0PHt23sFlm/9c7P5iECoXDy9hKHI8kUawQjShtflK78dUQ6QRjCCnWFI9H3pfFsjYY1gBBPv/uWPaHAOHkgjGEFPz0a3br1yDR5IZVpQ8TR4SADYI0dqd+9CVBrBz221eUCOpRtKbw/lenMn96GUaRDiTVOXnvUbQHp7SLfVWrsPJWjAiOfsPoDeHtrNjdbum45gBAVKPBf3IZRpiFfAWbnP5L8SuDTgxLN239J512DjvsmkQ4GBFG+h+5g76x8+vKLAIN/os3fN6x0R17ke9gH21SCXn/Ju//kz2pAj+gUNsw47QpsO/VfuGKiPvn3bWnQZ4JIr6A8PRv382S+1ruRLaJxgRwAAAABJRU5ErkJggg=="
+                        class="parent-part-class">
+                    <div class="about-part2-text">
+                        영화의 주제와 인물들을 소개하는 시퀀스처럼, 우리의 만남과 협업이 하나의 영화와 같이 새로운 이야기를 만들어내는 것을 목표로 하고 있습니다.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank2"></div>
+        <div class="benefit-section">
+            <div class="title">Benefit</div>
+            <div class="benefit-part">
+                <img src="https://seungyun-park.github.io/sequence/static/media/Benefit1.6816a8992118763b4cd3.png"
+                    class="benefit-part-image">
+                <div class="benefit-text-section">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABoCAYAAACwna0IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU2SURBVHgB7Z1PbhNNEMWrxxMIsPj8LUEJjBcRY2/IDXBuwA0INwgniHOChBMAJ0huYN8gYYMHsYhJLFiSHSBsF1XESCZy4u6Z6emH5J+ECGYsxMvrrj9d7hCBcpqmCYETEyDnrdYBE/0nX74gYAyBIcJ1iHlXvx4xNxpZNiBQIgJiVjilFkW7BAyM84bN5o4s1f2rryO7D8J5Z2m6PU84Bdl9wZ03bLU2mfn4pmdQ3RfeecyHix5BdV9w8diYi0XPGOZtxLwvuHhmMjmxeQ7RfQjOsxIP0X0Ie94720fR3BdcvNHqqpXzFDT3BRevcXJyIfnSwPb52Jh9AgGjPGPuOTz97DxN2wQAhHi2QWMGiL0PQzyiT05vMKaN4D4I8cbMrs5TgrsPQrzfdatFpfEX4r5Pjx/vUEBw+nk53BdJ3neaJHUKBIx4su/lWbr12p07wZYvkvOsK41ZJEfcGW5sbFIAYMSLxuM8zvsN12pBEmcY8X7euzegvAQKHlCnZ3IAdCzLN+8SvDCj0dbax4+5HewK1OmZbW/vGuqTOD6sMvpCiZejTPsLWUZJldEXSry8EXcWjb5V7X9Q4rn09m5Ckuf9KmpfKPFce3s3Ysyh7/wPa9lS7kpjHnWO465PARHFG1B5eBUQTrwygsYVVMBjH0EETrwxUY88oEHkrNV6XWYeCDefp0il8VUc6CXZ1W0hYu6sZdlbKgjesr1kQJ7QRFqS8TeSynSLpjOQ4rHbaVo+pJkgv7rnzebxME2f5zkPhpxJNh6dN4dNdaIKIU7siaBHGrRG37+fNAaDG48GIPc8TS00QlJo9Fxl2qyYl0JBOk97e/GPHxQcDVq6vGm+yyCdpwybzVP5bicEDGq0dR3BCAKseEV7e1WAK57rCEYAYMXLOYJRKbABQ/FZppUBbsBQwN0HLV6JjVEvoDuv7N5eqUCLV2QEowqgA4YiXY8uLVmyZAZzlqavCZSHWYZ9x4DsKUyg1KSr8qDfhy3ToKPthLlNwGCLZ0yQcVlboMUzk0lCwGCXZ1G0dF5e9Iw15OcsFoFd2wrx6iqs++DFk+bAEwIFXjwGjrjw4pmleIWAFU8nBnqzL5jpQTPSgfPpxsZmo8IPp9gSr/f7W9f9paYJEu2e0OXSaRsdigkg6kqtpkEDTjznZuh5mj6VN23rDEdVQsq/c/Cw339JYBTqJOvVbZExu95FZO6tZ9kWgVFKG17OV3flP9ghf1zI9vI/gVHaGcaXNE3GxnR9uRCxt1daqnI/ywZr/X5D9sIOeWAEmO+Vnuetv3+/50NAMx4nBIaXJFkFZOZSzx8QyzRvFYYc3rwpVcDpeCsSXsszFVAiUin5GWJvz3ttK0FEryo/oDJYWUkIiEoaA9PqoEcFiaPoKQFRWVcllv2v6IdT0IJGZeJpHlg0gKD19irt50l92iu4/yUEROXN0PHt23sFlm/9c7P5iECoXDy9hKHI8kUawQjShtflK78dUQ6QRjCCnWFI9H3pfFsjYY1gBBPv/uWPaHAOHkgjGEFPz0a3br1yDR5IZVpQ8TR4SADYI0dqd+9CVBrBz221eUCOpRtKbw/lenMn96GUaRDiTVOXnvUbQHp7SLfVWrsPJWjAiOfsPoDeHtrNjdbum45gBAVKPBf3IZRpiFfAWbnP5L8SuDTgxLN239J512DjvsmkQ4GBFG+h+5g76x8+vKLAIN/os3fN6x0R17ke9gH21SCXn/Ju//kz2pAj+gUNsw47QpsO/VfuGKiPvn3bWnQZ4JIr6A8PRv382S+1ruRLaJxgRwAAAABJRU5ErkJggg=="
+                        class="benefit-logo">
+                    <div class="benefit-text">
+                        <div class="benefit-title">개발자와 디자이너의 만남</div>
+                        <div class="benefit-p">각기 다른 분야의 대학생들이 모여 협업할 수 있는 프로젝트를 시작합니다.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-part">
+                <img src="https://seungyun-park.github.io/sequence/static/media/Benefit2.62b79017facda091791b.png"
+                    class="benefit-part-image">
+                <div class="benefit-text-section">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABoCAYAAACwna0IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU2SURBVHgB7Z1PbhNNEMWrxxMIsPj8LUEJjBcRY2/IDXBuwA0INwgniHOChBMAJ0huYN8gYYMHsYhJLFiSHSBsF1XESCZy4u6Z6emH5J+ECGYsxMvrrj9d7hCBcpqmCYETEyDnrdYBE/0nX74gYAyBIcJ1iHlXvx4xNxpZNiBQIgJiVjilFkW7BAyM84bN5o4s1f2rryO7D8J5Z2m6PU84Bdl9wZ03bLU2mfn4pmdQ3RfeecyHix5BdV9w8diYi0XPGOZtxLwvuHhmMjmxeQ7RfQjOsxIP0X0Ie94720fR3BdcvNHqqpXzFDT3BRevcXJyIfnSwPb52Jh9AgGjPGPuOTz97DxN2wQAhHi2QWMGiL0PQzyiT05vMKaN4D4I8cbMrs5TgrsPQrzfdatFpfEX4r5Pjx/vUEBw+nk53BdJ3neaJHUKBIx4su/lWbr12p07wZYvkvOsK41ZJEfcGW5sbFIAYMSLxuM8zvsN12pBEmcY8X7euzegvAQKHlCnZ3IAdCzLN+8SvDCj0dbax4+5HewK1OmZbW/vGuqTOD6sMvpCiZejTPsLWUZJldEXSry8EXcWjb5V7X9Q4rn09m5Ckuf9KmpfKPFce3s3Ysyh7/wPa9lS7kpjHnWO465PARHFG1B5eBUQTrwygsYVVMBjH0EETrwxUY88oEHkrNV6XWYeCDefp0il8VUc6CXZ1W0hYu6sZdlbKgjesr1kQJ7QRFqS8TeSynSLpjOQ4rHbaVo+pJkgv7rnzebxME2f5zkPhpxJNh6dN4dNdaIKIU7siaBHGrRG37+fNAaDG48GIPc8TS00QlJo9Fxl2qyYl0JBOk97e/GPHxQcDVq6vGm+yyCdpwybzVP5bicEDGq0dR3BCAKseEV7e1WAK57rCEYAYMXLOYJRKbABQ/FZppUBbsBQwN0HLV6JjVEvoDuv7N5eqUCLV2QEowqgA4YiXY8uLVmyZAZzlqavCZSHWYZ9x4DsKUyg1KSr8qDfhy3ToKPthLlNwGCLZ0yQcVlboMUzk0lCwGCXZ1G0dF5e9Iw15OcsFoFd2wrx6iqs++DFk+bAEwIFXjwGjrjw4pmleIWAFU8nBnqzL5jpQTPSgfPpxsZmo8IPp9gSr/f7W9f9paYJEu2e0OXSaRsdigkg6kqtpkEDTjznZuh5mj6VN23rDEdVQsq/c/Cw339JYBTqJOvVbZExu95FZO6tZ9kWgVFKG17OV3flP9ghf1zI9vI/gVHaGcaXNE3GxnR9uRCxt1daqnI/ywZr/X5D9sIOeWAEmO+Vnuetv3+/50NAMx4nBIaXJFkFZOZSzx8QyzRvFYYc3rwpVcDpeCsSXsszFVAiUin5GWJvz3ttK0FEryo/oDJYWUkIiEoaA9PqoEcFiaPoKQFRWVcllv2v6IdT0IJGZeJpHlg0gKD19irt50l92iu4/yUEROXN0PHt23sFlm/9c7P5iECoXDy9hKHI8kUawQjShtflK78dUQ6QRjCCnWFI9H3pfFsjYY1gBBPv/uWPaHAOHkgjGEFPz0a3br1yDR5IZVpQ8TR4SADYI0dqd+9CVBrBz221eUCOpRtKbw/lenMn96GUaRDiTVOXnvUbQHp7SLfVWrsPJWjAiOfsPoDeHtrNjdbum45gBAVKPBf3IZRpiFfAWbnP5L8SuDTgxLN239J512DjvsmkQ4GBFG+h+5g76x8+vKLAIN/os3fN6x0R17ke9gH21SCXn/Ju//kz2pAj+gUNsw47QpsO/VfuGKiPvn3bWnQZ4JIr6A8PRv382S+1ruRLaJxgRwAAAABJRU5ErkJggg=="
+                        class="benefit-logo">
+                    <div class="benefit-text">
+                        <div class="benefit-title">실제 서비스를 세상에</div>
+                        <div class="benefit-p">여러분이 만든 웹/앱 서비스가 실제로 세상에 출시되어 사용자들의 피드백을 받을 수 있는 경험을 제공합니다.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="benefit-part">
+                <img src="https://seungyun-park.github.io/sequence/static/media/Benefit3.f6aa11741c06ff345e4f.png"
+                    class="benefit-part-image">
+                <div class="benefit-text-section">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABoCAYAAACwna0IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAU2SURBVHgB7Z1PbhNNEMWrxxMIsPj8LUEJjBcRY2/IDXBuwA0INwgniHOChBMAJ0huYN8gYYMHsYhJLFiSHSBsF1XESCZy4u6Z6emH5J+ECGYsxMvrrj9d7hCBcpqmCYETEyDnrdYBE/0nX74gYAyBIcJ1iHlXvx4xNxpZNiBQIgJiVjilFkW7BAyM84bN5o4s1f2rryO7D8J5Z2m6PU84Bdl9wZ03bLU2mfn4pmdQ3RfeecyHix5BdV9w8diYi0XPGOZtxLwvuHhmMjmxeQ7RfQjOsxIP0X0Ie94720fR3BdcvNHqqpXzFDT3BRevcXJyIfnSwPb52Jh9AgGjPGPuOTz97DxN2wQAhHi2QWMGiL0PQzyiT05vMKaN4D4I8cbMrs5TgrsPQrzfdatFpfEX4r5Pjx/vUEBw+nk53BdJ3neaJHUKBIx4su/lWbr12p07wZYvkvOsK41ZJEfcGW5sbFIAYMSLxuM8zvsN12pBEmcY8X7euzegvAQKHlCnZ3IAdCzLN+8SvDCj0dbax4+5HewK1OmZbW/vGuqTOD6sMvpCiZejTPsLWUZJldEXSry8EXcWjb5V7X9Q4rn09m5Ckuf9KmpfKPFce3s3Ysyh7/wPa9lS7kpjHnWO465PARHFG1B5eBUQTrwygsYVVMBjH0EETrwxUY88oEHkrNV6XWYeCDefp0il8VUc6CXZ1W0hYu6sZdlbKgjesr1kQJ7QRFqS8TeSynSLpjOQ4rHbaVo+pJkgv7rnzebxME2f5zkPhpxJNh6dN4dNdaIKIU7siaBHGrRG37+fNAaDG48GIPc8TS00QlJo9Fxl2qyYl0JBOk97e/GPHxQcDVq6vGm+yyCdpwybzVP5bicEDGq0dR3BCAKseEV7e1WAK57rCEYAYMXLOYJRKbABQ/FZppUBbsBQwN0HLV6JjVEvoDuv7N5eqUCLV2QEowqgA4YiXY8uLVmyZAZzlqavCZSHWYZ9x4DsKUyg1KSr8qDfhy3ToKPthLlNwGCLZ0yQcVlboMUzk0lCwGCXZ1G0dF5e9Iw15OcsFoFd2wrx6iqs++DFk+bAEwIFXjwGjrjw4pmleIWAFU8nBnqzL5jpQTPSgfPpxsZmo8IPp9gSr/f7W9f9paYJEu2e0OXSaRsdigkg6kqtpkEDTjznZuh5mj6VN23rDEdVQsq/c/Cw339JYBTqJOvVbZExu95FZO6tZ9kWgVFKG17OV3flP9ghf1zI9vI/gVHaGcaXNE3GxnR9uRCxt1daqnI/ywZr/X5D9sIOeWAEmO+Vnuetv3+/50NAMx4nBIaXJFkFZOZSzx8QyzRvFYYc3rwpVcDpeCsSXsszFVAiUin5GWJvz3ttK0FEryo/oDJYWUkIiEoaA9PqoEcFiaPoKQFRWVcllv2v6IdT0IJGZeJpHlg0gKD19irt50l92iu4/yUEROXN0PHt23sFlm/9c7P5iECoXDy9hKHI8kUawQjShtflK78dUQ6QRjCCnWFI9H3pfFsjYY1gBBPv/uWPaHAOHkgjGEFPz0a3br1yDR5IZVpQ8TR4SADYI0dqd+9CVBrBz221eUCOpRtKbw/lenMn96GUaRDiTVOXnvUbQHp7SLfVWrsPJWjAiOfsPoDeHtrNjdbum45gBAVKPBf3IZRpiFfAWbnP5L8SuDTgxLN239J512DjvsmkQ4GBFG+h+5g76x8+vKLAIN/os3fN6x0R17ke9gH21SCXn/Ju//kz2pAj+gUNsw47QpsO/VfuGKiPvn3bWnQZ4JIr6A8PRv382S+1ruRLaJxgRwAAAABJRU5ErkJggg=="
+                        class="benefit-logo">
+                    <div class="benefit-text">
+                        <div class="benefit-title">실무에서 필요한 협업 경험</div>
+                        <div class="benefit-p-3">대학생들이 다양한 직무와 협업하며 실무에서 요구되는 경험을 쌓을 수 있습니다.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank2"></div>
+        <div class="partner-section">
+            <div class="title">Partner</div>
+            <div class="partner-content">
+                <img src="https://seungyun-park.github.io/sequence/static/media/PartnerImage.75e842b1331ff75f799a.png"
+                    alt="partner-image" class="partner-image">
+                <div class="partner-part">
+                    <div class="partner-part-title">Underdog Revolution</div>
+                    <p class="partner-part-p">
+                        세종시 청년 개발자들이 모인 언더독 레볼루션은<br>
+                        청년들의 IT기반 스타트업 생태계를 만들어가자는 목표를 가지고 있습니다.<br>
+                        청년들의 활발한 청년창업이 진정한 의미의 실리콘 밸리의 기작이라 정의하고<br>
+                        청년창업 활성화를 위한 다양한 활동을 전개합니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="blank2"></div>
+        <div class="experience-title-section">
+            <div class="experience-title">Experience</div>
+        </div>
+        
+
+        <div class="blank3" style="height: 450px; background-color: rgb(21,21,21);"></div>
+        <div class="bottom-image">
+            <img src="data:image/png;base64,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"
+                class="bottom-image-s">
+        </div>
+        <div class="bottom-textbox">
+            <button class="bottom-text">새로운 시퀀스를 만들어보세요!</button>
+        </div>
+        <div class="blank2"></div>
+        <div class="blank2"></div>
+        <div class="footer-section">
+            <div class="footer-textarea">
+                <h2 class="footer-title">Who Made</h2>
+                <div class="design-dev-section">
+                    <h3 class="title-text">Design Team</h3>
+                    <div class="design-dev-part">
+                        <div class="footer-part-text">
+                            <span class="role-text">Designer</span>
+                            <span class="name-text">Hong Yeong-ju</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Park So-hyun</span>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="design-dev-section">
+                    <h3 class="title-text">Dev Team</h3>
+                    <div class="design-dev-part">
+                        <div class="footer-part-text">
+                            <span class="role-text">Fontend</span>
+                            <span class="name-text">Choi Bo-kyung</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Jung Joon-yong</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Kim Na-kyung</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Lee Yun-seo</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Park Seung-gyun</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text">Backend</span>
+                            <span class="name-text">Ha Heon-chan</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Jo Seung-bin</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Kim Dae-jeon</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Kim Min-ji</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Na Gang-min</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Oh Jeong-bin</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Park Kyu-won</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Park So-yeon</span>
+                        </div>
+                        <div class="footer-part-text">
+                            <span class="role-text"></span>
+                            <span class="name-text">Kim Jae-hwan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank5"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
